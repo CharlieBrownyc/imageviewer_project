@@ -1,0 +1,776 @@
+08-05 15:15:26.939  4261  4361 I PackageManager:           pkg{com.viewerapp}
+08-05 15:15:27.350 27536 27536 I GOS:GameServiceReceiver:  PkgInstallStarted for com.viewerapp UserID : 0
+08-05 15:15:27.577 27536 27577 I GOS:GameIntentService: onHandleIntent(). changeType(INSTALL_STARTED), packageName(com.viewerapp), UserHandle(0), Installed(false)
+08-05 15:15:27.596 27536 27577 W GOS:PackageUtil: isVrApp(). PackageManager.NameNotFoundException: com.viewerapp
+08-05 15:15:28.094 27530 27530 I Finsky  : [2] VerifyApps: Install-time verification requested for package com.viewerapp, PackageManager id = 28, Verifier id = 14acaab4-3a66-4407-bfa8-445458cd446e
+08-05 15:15:28.229 27536 27577 I GOS:NetworkConnector: getSingleCategoryResponse(), request: PRD/v4/packages/com.viewerapp, v4PkgResponse: {"pkg_name":"com.viewerapp", "pkg_type":"unknown"}
+08-05 15:15:28.253 27536 27577 I GOS:SystemEventReactor: addPkgDataFromServer(), A package was added : com.viewerapp as unknown
+08-05 15:15:28.843 27530 27601 I Finsky  : [8461] VerifyApps: Anti-malware verification task started for package=com.viewerapp
+08-05 15:15:30.195 27530 27606 I Finsky  : [8466] VerifyApps: Starting APK Analysis scan for com.viewerapp.
+08-05 15:15:30.198 27530 27606 I Finsky  : [8466] Scanning package com.viewerapp contents with client side protections. File: [tVSMD8xoJGvCiS3K32OtOdbjKTNmwWVY0vU9zDgg404]
+08-05 15:15:30.207 27530 27606 I Finsky  : [8466] VerifyApps: APK Analysis scan finished for com.viewerapp. Verdict: SAFE
+08-05 15:15:30.879 27530 27584 I Finsky  : [8446] VerifyApps: Verification package=com.viewerapp, id=28, response=0, upload_requested=false, run_post_install=false
+08-05 15:15:30.882 27530 27584 I Finsky  : [8446] VerifyApps: PAM result saving to datastore delayed for package: com.viewerapp
+08-05 15:15:30.889 27530 27601 I Finsky  : [8461] VerifyApps: Starting required split types check for com.viewerapp.
+08-05 15:15:30.899 27530 27601 I Finsky  : [8461] VerifyApps: Required split types check successful for com.viewerapp.
+08-05 15:15:30.919 27530 27530 I Finsky  : [2] VerifyApps: Install-time verification complete: id=28, package_name=com.viewerapp
+08-05 15:15:31.398 27793 27793 I ApkToolkit: <FIVE>: Enter ApkSigner APK: 3 com.viewerapp/base.apk
+08-05 15:15:31.924  6151 16750 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.viewerapp. Reason: op android:read_external_storage
+08-05 15:15:31.925  6151 16750 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.viewerapp. Reason: op android:read_external_storage
+08-05 15:15:31.986  4261  4322 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk pkg=com.viewerapp isa=arm64 dexoptFlags=boot_complete,profile_guided,public,enable_hidden_api_checks targetFilter=speed-profile oatDir=/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/oat classLoaderContext=PCL[]{} dexMetadataPath=null async=false
+08-05 15:15:31.995  3989  4561 V installd: DexInv: --- BEGIN '/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk' ---
+08-05 15:15:32.202 27813 27813 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=10 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=speed-profile -j6 --classpath-dir=/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ== --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=install
+08-05 15:15:33.419 27813 27813 I ApkToolkit: <FIVE>: Enter ProvisionOat APK: 12 com.viewerapp/base.apk
+08-05 15:15:33.419 27813 27813 I ApkToolkit: <FIVE>: Enter ProvisionOat OAT: 9 com.viewerapp/oat/arm64/base.odex
+08-05 15:15:33.419 27813 27813 I ApkToolkit: <FIVE>: Enter ProvisionOat VDEX: 10 com.viewerapp/oat/arm64/base.vdex
+08-05 15:15:33.433  3989  4561 V installd: DexInv: --- END '/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk' (success) ---
+08-05 15:15:33.482  4261  4322 D MultiUserInstallPolicy: applyInstallPolicyPackageInternalLPw : com.viewerapp
+08-05 15:15:33.488  4261  4322 D MultiUserInstallPolicy: installedOrEnabledPackage : com.viewerapp
+08-05 15:15:33.511  6151  6151 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.viewerapp. Reason: package android.intent.action.PACKAGE_ADDED
+08-05 15:15:33.539  5046  5046 D RegisteredServicesCache: com.viewerapp is not related HCE package
+08-05 15:15:33.553  4261  4283 D OverlayManager: updateAssets -> not for themes [com.viewerapp] avoidRelaunch false
+08-05 15:15:33.555  4261  4261 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:33.556  4261  4261 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:33.556  4261  4261 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:33.563  4614  4614 D FaceWidgetMetadataParser: updatePackage() com.viewerapp true
+08-05 15:15:33.568  4261  4491 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:33.571  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+08-05 15:15:33.572  4261  4491 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:33.572  4261  4491 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:33.573  4614  4614 D FaceWidgetMetadataParser: removePackage() key = com.viewerapp
+08-05 15:15:33.575  5674  5738 I PackageInfoManager_FLP: action : ACTION_PACKAGE_ADDED, packageName = com.viewerapp
+08-05 15:15:33.575  4261  4500 D PkgPredictorService-MultiUserPkgManager: user=0  uid=10260 onPackageStatusChange com.viewerapp action=android.intent.action.PACKAGE_ADDED
+08-05 15:15:33.616  5674  5738 I PackageInfoManager_FLP: handled onPackageAdded for com.viewerapp(DENY)
+08-05 15:15:33.638  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+08-05 15:15:33.639  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.backgroundimpl.BackgroundPackageMonitorReceiverImpl$RegisteredReceiver
+08-05 15:15:33.640  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.facebook.appmanager/com.facebook.oxygen.common.packages.event.manifest.ManifestPackageEventReceiver
+08-05 15:15:33.640  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+08-05 15:15:33.641  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+08-05 15:15:33.641  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+08-05 15:15:33.655  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.samsung.android.app.taskedge/.edgepanel.TaskEdgePanelProvider
+08-05 15:15:33.679  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.samsung.android.localeoverlaymanager/.PackageAddedReceiver
+08-05 15:15:33.680  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.samsung.android.sm.devicesecurity/.PackageReceiver
+08-05 15:15:33.685  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.sec.android.app.safetyassurance/.emergencyreporthelper.EmergencyReportStartMonitorReceiver
+08-05 15:15:33.689  4261  4292 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.sec.android.app.samsungapps/.receiver.PackageAddedReceiver
+08-05 15:15:33.739  4261  4261 I Telecom:SamsungCommonPolicyPackageBroadcastReceiver: action : android.intent.action.PACKAGE_ADDED / packageName : com.viewerapp
+08-05 15:15:33.748  4261  4598 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:33.750  4261  4598 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:33.750  4261  4598 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:33.750  4261  4598 I Pageboost: appinfo : com.viewerapp 0 0 0 0
+08-05 15:15:33.751  4261  4598 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:33.752  4261  4598 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:33.752  4261  4598 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:33.849  4261  4598 I Pageboost: Reset this app info : com.viewerapp 
+08-05 15:15:33.884  4261  4598 I Pageboost: add app to global @ runtime: com.viewerapp
+08-05 15:15:33.947  4592  4592 I VvmPkgInstalledRcvr: onReceive() : action android.intent.action.PACKAGE_ADDED packageName :com.viewerapp
+08-05 15:15:33.971 27530 27530 I Finsky  : [2] AIM: AppInfoCacheUpdater -> invalidating apps: [com.viewerapp]
+08-05 15:15:34.026  5046  5046 D RegisteredServicesCache: com.viewerapp is not related HCE package
+08-05 15:15:34.032  4592  4592 D ImsResolver: maybeAddedImsService, packageName: com.viewerapp
+08-05 15:15:34.055  4614  4614 D FaceWidgetMetadataParser: updatePackage() com.viewerapp false
+08-05 15:15:34.079  4614  4614 D FaceWidgetMetadataParser: removePackage() key = com.viewerapp
+08-05 15:15:34.120 27530 27593 I Finsky  : [8455] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.viewerapp]
+08-05 15:15:34.203  5408 27878 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+08-05 15:15:34.225  5408 27898 W NetworkScheduler: Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+08-05 15:15:34.233  4592  4592 D ImsResolver: maybeAddedImsService, packageName: com.viewerapp
+08-05 15:15:34.427  4261  4491 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.viewerapp
+08-05 15:15:34.427  4261  4491 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.viewerapp&hl=en
+08-05 15:15:34.750  4261  4636 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.viewerapp flg=0x4000010 (has extras) } to com.sec.imsservice/com.sec.internal.ims.imsservice.ImsIntentReceiver
+08-05 15:15:35.879 27934 27934 D EdgeLightingReceiver: com.samsung.android.app.edgelighting.PACKAGE_ADDED com.viewerapp
+08-05 15:15:36.339 27934 27934 D EdgeLightingSettingManager: addSilentInstalledPackage : on, packageName = com.viewerapp
+08-05 15:15:36.672 27965 27965 I FILP/PackageIntentReceiver: pkgName : com.viewerapp
+08-05 15:15:36.842  4261  4291 D LauncherAppsService: Callback onPackageAdded: com.viewerapp, userId: 0, listener: android
+08-05 15:15:36.844  4261  4261 I GameManagerService: PkgInstallListener, onPackageAdded : com.viewerapp userHandle : UserHandle{0} userID : 0
+08-05 15:15:36.845  4261  4409 D GameManagerService:GosNotifyThread: notifyPackageChangedToGos(), before send intent to GOS. type:15, changeType: 0, packageName:com.viewerapp
+08-05 15:15:36.857  4261  4291 D LauncherAppsService: Callback onPackageAdded: com.viewerapp, userId: 0, listener: com.android.systemui
+08-05 15:15:36.858  4261  4291 D LauncherAppsService: Callback onPackageAdded: com.viewerapp, userId: 0, listener: com.sec.android.app.launcher
+08-05 15:15:36.865  4916  4964 I PackageUpdatedTask: mAllAppsList.addPackage com.viewerapp
+08-05 15:15:36.992  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:15:36.993  4261  4291 D MetaDataCollector: onReceive: done pkgName=com.viewerapp
+08-05 15:15:36.995  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:15:37.006  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:15:37.015  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:15:37.032  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:15:37.099 27536 28010 I GOS:GameIntentService: onHandleIntent(). changeType(INSTALLED), packageName(com.viewerapp), UserHandle(0), Installed(true)
+08-05 15:15:37.101 27530 27530 I Finsky  : [2] AIM: AppInfoCacheUpdater -> invalidating apps: [com.viewerapp]
+08-05 15:15:37.108  4916  4964 I PackageUpdatedTask: added, appInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=-1 rank=0 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:15:37.113 27530 27606 I Finsky  : [8466] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.viewerapp]
+08-05 15:15:37.609  4916  4964 I PackageUpdatedTask: mAllAppsList.updatePackage com.viewerapp
+08-05 15:15:37.635  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:15:37.638  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:15:37.648  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:15:37.671  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:15:37.681  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:15:37.724 27536 27536 I GOS:GameServiceReceiver:  Package changeType : ENABLED, packageName : com.viewerapp
+08-05 15:15:37.740  4916  4964 I PackageUpdatedTask: modified, appInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:15:37.934 27536 28077 I GOS:GameIntentService: onHandleIntent(). changeType(ENABLED), packageName(com.viewerapp), UserHandle(0), Installed(true)
+08-05 15:15:38.117  4916  4964 I GameLauncherManagerImp: com.viewerapp does not contain game list
+08-05 15:15:45.183  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:15:45.185  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:15:45.185  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:15:45.298  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:15:45.299  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:15:45.301  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:15:45.303  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:15:45.307  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:15:45.313  4261  5164 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:15:45.318  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{464caed u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:15:45.319  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:45.320  4261  4500 D DexPreloader: create a new DexPreloadTask pkg:com.viewerapp  path:/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==
+08-05 15:15:45.324  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{3cb080f #24 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=24 sz=0} activity=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:45.325  3931  4401 I SurfaceFlinger: id=1372 createSurf (0x0),-1 flag=80004, ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0
+08-05 15:15:45.325  4261 28152 D DexPreloader: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/oat/arm64/base.odex is already preloaded
+08-05 15:15:45.329  4261  5164 D WindowManager: CustomStartingWindowData: className=com.viewerapp.MainActivity, packageName=com.viewerapp, taskUserId=0
+08-05 15:15:45.343  4261  6108 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:45.383  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:15:45.389  3931  3953 I SurfaceFlinger: id=1373 createSurf (0x0),-1 flag=80004, 9181f94 Splash Screen com.viewerapp#0
+08-05 15:15:45.390  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.392  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.399  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:15:45.399  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 0
+08-05 15:15:45.403  4261  4287 V WindowManager: Relayout Window{9181f94 u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:15:45.407  3931  3953 I SurfaceFlinger: id=1374 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:15:45.409  4261  4287 D WindowManager: makeSurface duration=3 name=Splash Screen com.viewerapp
+08-05 15:15:45.411  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.414  4261  4293 I ActivityManager: Start proc 28159:com.viewerapp/u0a260 for pre-top-activity {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:45.438  4261  4287 D WindowManager: finishDrawingWindow: Window{9181f94 u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:15:45.441 28159 28159 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:15:45.453  4261  4636 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:15:45.455  4261  4636 D ActivityManager: attachApplicationLocked() app=ProcessRecord{1cdb9ef 28159:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:15:45.457  4261  4636 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.457  4261  4636 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.464  4261  4636 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}
+08-05 15:15:45.466  4261  4636 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:15:45.466  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:15:45.468  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:45.468  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:15:45.468  4261  4636 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:45.469  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:15:45.469  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:15:45.471 28159 28159 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:15:45.487  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{3cb080f #24 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=24 sz=1}
+08-05 15:15:45.488 28159 28159 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:15:45.490 28159 28159 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:15:45.493  4261  4287 D WindowManager: 	Add container=Task{3cb080f #24 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=24 sz=1}
+08-05 15:15:45.509  3931  4401 I SurfaceFlinger: id=1380 createSurf (0x0),-1 flag=80000, 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:45.515  4261  4287 I WindowManager: container=Task{3cb080f #24 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=24 sz=1}
+08-05 15:15:45.516  4261  4410 V ActivityManager: Changed top to 10260,ProcessRecord{1cdb9ef 28159:com.viewerapp/u0a260}
+08-05 15:15:45.533  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:15:45.533 28159 28159 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:15:45.535 28159 28159 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:15:45.540  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:45.540  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:45.543  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:45.544  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:45.544  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:45.545 28159 28159 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:15:45.545  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:15:45.545  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:45.545  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:15:45.556 28159 28159 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:15:45.561  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:15:45.565  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:15:45.565  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:4 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:15:45.570  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:15:45.574  4261  4500 D DexPreloader: com.viewerappbecome forground ,dexpreload store app:com.viewerapp pid:28159 dex profile begin
+08-05 15:15:45.582  3931  3931 D SurfaceFlinger:      CLIENT | 0x7d42c14800 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  818 1777 1005 1964 | Splash Screen com.viewerapp#0
+08-05 15:15:45.665  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:15:45.727 28159 28205 E AndroidRuntime: Process: com.viewerapp, PID: 28159
+08-05 15:15:45.760  3931  4401 I SurfaceFlinger: id=1381 createSurf (0x0),-1 flag=80004, aae4624 com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:15:45.774  4261  5166 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:15:45.784  4261  4636 V WindowManager: Relayout Window{aae4624 u0 com.viewerapp/com.viewerapp.MainActivity}: viewVisibility=0 req=1080x2340
+08-05 15:15:45.788  3931  3954 I SurfaceFlinger: id=1382 createSurf (1080x2340),1 flag=404, com.viewerapp/com.viewerapp.MainActivity$_28159#0
+08-05 15:15:45.789  4261  4636 D WindowManager: makeSurface duration=1 name=com.viewerapp/com.viewerapp.MainActivity$_28159
+08-05 15:15:45.790  4261  4636 V WindowManager: Changing focus from null to Window{aae4624 u0 com.viewerapp/com.viewerapp.MainActivity} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:567 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6316 com.android.server.wm.WindowManagerService.relayoutWindow:2718 com.android.server.wm.Session.relayout:219 
+08-05 15:15:45.797  4261  5166 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:15:45.806  4261  5166 V WindowManager: Changing focus from Window{aae4624 u0 com.viewerapp/com.viewerapp.MainActivity} to null displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:567 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6316 com.android.server.wm.DisplayContent.setFocusedApp:6776 com.android.server.wm.ActivityTaskManagerService.setResumedActivityUncheckLocked:6725 
+08-05 15:15:45.878  4261  5164 V WindowManager: Setting visibility of Window{aae4624 u0 com.viewerapp/com.viewerapp.MainActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1004 com.android.server.wm.ActivityRecord.setClientVisible:6401 com.android.server.wm.ActivityRecord.onAnimationFinished:7156 com.android.server.wm.WindowContainer.doAnimationFinished:2626 com.android.server.wm.WindowContainer.onAnimationFinished:2635 
+08-05 15:15:45.881  4261  5164 E WindowManager: win=Window{9181f94 u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:15:45.881  4261  5164 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0x2604dc0 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:15:45.882  3931  3953 I Layer   : id=1374 removeFromCurrentState Splash Screen com.viewerapp#0 (67)
+08-05 15:15:45.883  4261  5164 D ActivityTaskManager: finishFixedRotationTransform, r=ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24 f}}, caller=com.android.server.wm.WindowToken.finishFixedRotationTransform:664 com.android.server.wm.DisplayContent$FixedRotationTransitionListener.onAppTransitionFinishedLocked:7026 com.android.server.wm.AppTransition.notifyAppTransitionFinishedLocked:543 com.android.server.wm.ActivityRecord.onAnimationFinished:7177 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:15:45.886  4261  5164 D WindowManager: 	container=Task{3cb080f #24 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=24 sz=1}
+08-05 15:15:45.899  3931  3953 I Layer   : id=1372 removeFromCurrentState ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1380 removeFromCurrentState 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1381 removeFromCurrentState aae4624 com.viewerapp/com.viewerapp.MainActivity#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1382 removeFromCurrentState com.viewerapp/com.viewerapp.MainActivity$_28159#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1373 removeFromCurrentState 9181f94 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1372 addToCurrentState ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1380 addToCurrentState 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1381 addToCurrentState aae4624 com.viewerapp/com.viewerapp.MainActivity#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1382 addToCurrentState com.viewerapp/com.viewerapp.MainActivity$_28159#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1373 addToCurrentState 9181f94 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:45.899  3931  3953 I Layer   : id=1373 removeFromCurrentState 9181f94 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:45.900  3931  4401 I SurfaceFlinger: id=1374 Removed Splash Screen com.viewerapp#0 (63)
+08-05 15:15:45.900  3931  4401 I SurfaceFlinger: id=1373 Removed 9181f94 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:45.902  3931  3931 I Layer   : id=1374[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:15:45.903  3931  3931 I Layer   : id=1373[1] Destroyed 9181f94 Splash Screen com.viewerapp#0
+08-05 15:15:45.959  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:15:45.968  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:15:45.985  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=1
+08-05 15:15:45.992  4261  4379 I WindowManager: WIN DEATH: Window{aae4624 u0 com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:45.992  4261  4379 W InputDispatcher: Attempted to unregister already unregistered input channel 'aae4624 com.viewerapp/com.viewerapp.MainActivity (server)'
+08-05 15:15:45.998  4261  4379 I WindowManager: Destroying surface Surface(name=com.viewerapp/com.viewerapp.MainActivity$_28159)/@0x8ac6f8f called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.removeImmediately:2696 com.android.server.wm.WindowState.removeIfPossible:2861 com.android.server.wm.WindowState.access$300:300 com.android.server.wm.WindowState$DeathRecipient.binderDied:3438 android.os.IBinder$DeathRecipient.binderDied:311 android.os.BinderProxy.sendDeathNotice:719 
+08-05 15:15:45.999  3931  3953 I Layer   : id=1382 removeFromCurrentState com.viewerapp/com.viewerapp.MainActivity$_28159#0 (58)
+08-05 15:15:46.003  3931  3954 I SurfaceFlinger: id=1382 Removed com.viewerapp/com.viewerapp.MainActivity$_28159#0 (58)
+08-05 15:15:46.004  3931  5005 I Layer   : id=1381 removeFromCurrentState aae4624 com.viewerapp/com.viewerapp.MainActivity#0 (58)
+08-05 15:15:46.005  3931  5801 I SurfaceFlinger: id=1381 Removed aae4624 com.viewerapp/com.viewerapp.MainActivity#0 (58)
+08-05 15:15:46.019  3931  3931 I Layer   : id=1382[1] Destroyed com.viewerapp/com.viewerapp.MainActivity$_28159#0
+08-05 15:15:46.020  3931  3931 I Layer   : id=1381[1] Destroyed aae4624 com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:15:46.031  4261  4275 I ActivityManager: Process com.viewerapp (pid 28159) has died: cch CRE (61,858)
+08-05 15:15:46.042  4261  4275 I ActivityTaskManager: Removing activity ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24 f}}(appDied)  from stack callers=com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.processActivity:565 com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.process:480 com.android.server.wm.ActivityStack.handleAppDied:3395 com.android.server.wm.RootWindowContainer.handleAppDied:3676 com.android.server.wm.ActivityTaskManagerService$LocalService.handleAppDied:8304 
+08-05 15:15:46.043  3931  3953 I SurfaceFlinger: id=1380 Removed 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (56)
+08-05 15:15:46.046  3931  3953 I Layer   : id=1372 removeFromCurrentState ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0 (56)
+08-05 15:15:46.046  3931  3953 I Layer   : id=1380 removeFromCurrentState 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (56)
+08-05 15:15:46.047  3931  3953 I SurfaceFlinger: id=1372 Removed ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0 (56)
+08-05 15:15:46.053  3931  3931 I Layer   : id=1372[1] Destroyed ActivityRecord{464caed u0 com.viewerapp/.MainActivity t24}#0
+08-05 15:15:46.053  3931  3931 I Layer   : id=1380[1] Destroyed 9c84504 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:46.061  4261  4491 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.viewerapp
+08-05 15:15:46.061  4261  4491 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.viewerapp&hl=en
+08-05 15:15:46.087  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:15:46.303  4261  4286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{464caed u0 com.viewerapp/.MainActivity t-1 f}}
+08-05 15:15:47.615  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:15:47.617  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:15:47.617  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:15:47.623  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:15:47.648  4261  4293 I ActivityManager: Start proc 28246:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:47.666  4261  4636 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:15:47.667  4261  4636 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:15:47.667 28246 28246 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:15:47.668  4261  4636 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:47.672  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:15:47.673  4261  4636 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{dec7b27 #25 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=25 sz=0} activity=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:47.674  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:15:47.674  3931  3953 I SurfaceFlinger: id=1391 createSurf (0x0),-1 flag=80004, ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0
+08-05 15:15:47.676  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:15:47.679  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:15:47.682  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:15:47.688  4261  5164 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:15:47.688  4261  4636 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:47.697  4261  5164 D ActivityManager: attachApplicationLocked() app=ProcessRecord{8bda61a 28246:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:15:47.699  4261  5164 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}
+08-05 15:15:47.699  4261  5164 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}
+08-05 15:15:47.701  4261  5164 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}
+08-05 15:15:47.703  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:15:47.703  4261  5164 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:15:47.706  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:47.707  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:15:47.707  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:15:47.707  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:15:47.707  4261  5164 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:47.729  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:15:47.730  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 28246
+08-05 15:15:47.730  3931  3953 I SurfaceFlinger: id=1392 createSurf (0x0),-1 flag=80004, dc6ee15 Splash Screen com.viewerapp#0
+08-05 15:15:47.730 28246 28246 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:15:47.731  4261  4286 V ActivityManager: Changed top to 10260,ProcessRecord{8bda61a 28246:com.viewerapp/u0a260}
+08-05 15:15:47.734  4261  4287 V WindowManager: Relayout Window{dc6ee15 u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:15:47.737  3931  3954 I SurfaceFlinger: id=1393 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:15:47.738  4261  4287 D WindowManager: makeSurface duration=1 name=Splash Screen com.viewerapp
+08-05 15:15:47.744  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:15:47.751  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:15:47.751  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:15:47.752  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:3 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:15:47.752  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:15:47.757  4261  4287 D WindowManager: finishDrawingWindow: Window{dc6ee15 u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:15:47.764  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{dec7b27 #25 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=25 sz=1}
+08-05 15:15:47.764 28246 28246 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:15:47.765 28246 28246 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:15:47.766  4261  4287 D WindowManager: 	Add container=Task{dec7b27 #25 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=25 sz=1}
+08-05 15:15:47.773  3931  3953 I SurfaceFlinger: id=1399 createSurf (0x0),-1 flag=80000, 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:47.776  4261  4287 I WindowManager: container=Task{dec7b27 #25 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=25 sz=1}
+08-05 15:15:47.783  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:47.784  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:47.787  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:47.788  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:47.788  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:47.788  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:15:47.789  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:47.789  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:15:47.798 28246 28246 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:15:47.801 28246 28246 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:15:47.809 28246 28246 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:15:47.814  3931  3931 D SurfaceFlinger:      CLIENT | 0x7d42c14940 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  814 1773 1006 1965 | Splash Screen com.viewerapp#0
+08-05 15:15:47.822 28246 28246 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:15:47.875  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:15:47.952 28246 28289 E AndroidRuntime: Process: com.viewerapp, PID: 28246
+08-05 15:15:47.959  4261  4636 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:15:47.960  4261  4636 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:15:48.035  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:15:48.044  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=2
+08-05 15:15:48.070  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:15:48.081  3931  3954 I SurfaceFlinger: id=1403 createSurf (0x0),-1 flag=80004, 406b3ad com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:15:48.104  4261  7490 V WindowManager: Relayout Window{406b3ad u0 com.viewerapp/com.viewerapp.MainActivity}: viewVisibility=0 req=1080x2340
+08-05 15:15:48.107  3931  5801 I SurfaceFlinger: id=1404 createSurf (1080x2340),1 flag=404, com.viewerapp/com.viewerapp.MainActivity$_28246#0
+08-05 15:15:48.108  4261  7490 D WindowManager: makeSurface duration=2 name=com.viewerapp/com.viewerapp.MainActivity$_28246
+08-05 15:15:48.117  4261  6065 V WindowManager: Setting visibility of Window{406b3ad u0 com.viewerapp/com.viewerapp.MainActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1004 com.android.server.wm.ActivityRecord.setClientVisible:6401 com.android.server.wm.ActivityRecord.onAnimationFinished:7156 com.android.server.wm.WindowContainer.doAnimationFinished:2626 com.android.server.wm.WindowContainer.onAnimationFinished:2635 
+08-05 15:15:48.118  4261  6065 E WindowManager: win=Window{dc6ee15 u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:15:48.119  4261  6065 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0x8ff8e53 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:15:48.122  3931  5801 I Layer   : id=1393 removeFromCurrentState Splash Screen com.viewerapp#0 (63)
+08-05 15:15:48.123  4261  6065 D ActivityTaskManager: finishFixedRotationTransform, r=ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25 f}}, caller=com.android.server.wm.WindowToken.finishFixedRotationTransform:664 com.android.server.wm.DisplayContent$FixedRotationTransitionListener.onAppTransitionFinishedLocked:7026 com.android.server.wm.AppTransition.notifyAppTransitionFinishedLocked:543 com.android.server.wm.ActivityRecord.onAnimationFinished:7177 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:15:48.128  4261  6065 D WindowManager: 	container=Task{dec7b27 #25 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=25 sz=1}
+08-05 15:15:48.131  3931  5005 I Layer   : id=1391 removeFromCurrentState ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1399 removeFromCurrentState 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1403 removeFromCurrentState 406b3ad com.viewerapp/com.viewerapp.MainActivity#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1404 removeFromCurrentState com.viewerapp/com.viewerapp.MainActivity$_28246#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1392 removeFromCurrentState dc6ee15 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1392 removeFromCurrentState dc6ee15 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1391 addToCurrentState ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1399 addToCurrentState 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1403 addToCurrentState 406b3ad com.viewerapp/com.viewerapp.MainActivity#0 (63)
+08-05 15:15:48.131  3931  5005 I Layer   : id=1404 addToCurrentState com.viewerapp/com.viewerapp.MainActivity$_28246#0 (63)
+08-05 15:15:48.132  3931  5005 I SurfaceFlinger: id=1393 Removed Splash Screen com.viewerapp#0 (63)
+08-05 15:15:48.132  3931  5005 I SurfaceFlinger: id=1392 Removed dc6ee15 Splash Screen com.viewerapp#0 (63)
+08-05 15:15:48.136  3931  3931 I Layer   : id=1392[1] Destroyed dc6ee15 Splash Screen com.viewerapp#0
+08-05 15:15:48.139  3931  3931 I Layer   : id=1393[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:15:48.229  3931  3953 I SurfaceFlinger: id=1406 createSurf (0x0),-1 flag=80004, 4ba74e Application Error: com.viewerapp#0
+08-05 15:15:48.237  4261  4284 V WindowManager: Changing focus from Window{83bf71 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} to Window{4ba74e u0 Application Error: com.viewerapp} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:567 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6316 com.android.server.wm.WindowManagerService.addWindow:1965 com.android.server.wm.Session.addToDisplayAsUser:182 
+08-05 15:15:48.290  4261  4284 V WindowManager: Relayout Window{4ba74e u0 Application Error: com.viewerapp}: viewVisibility=0 req=1078x552
+08-05 15:15:48.294  3931  3954 I SurfaceFlinger: id=1409 createSurf (1090x564),1 flag=4, Application Error: com.viewerapp#0
+08-05 15:15:48.295  4261  4284 D WindowManager: makeSurface duration=2 name=Application Error: com.viewerapp
+08-05 15:15:48.301  4261  5642 D WindowManager: finishDrawingWindow: Window{406b3ad u0 com.viewerapp/com.viewerapp.MainActivity} mDrawState=DRAW_PENDING
+08-05 15:15:48.326  3931  3953 E BufferQueueProducer: [com.viewerapp/com.viewerapp.MainActivity$_28246#0](id:f5b000000b2,api:0,p:-1,c:3931) disconnect: not connected (req=1)
+08-05 15:15:48.328  4261  5642 I WindowManager: Destroying surface Surface(name=com.viewerapp/com.viewerapp.MainActivity$_28246)/@0x5e44fb9 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.removeImmediately:2696 com.android.server.wm.WindowState.removeIfPossible:2861 com.android.server.wm.WindowState.removeIfPossible:2719 com.android.server.wm.WindowManagerService.removeWindow:2190 com.android.server.wm.Session.remove:199 android.view.IWindowSession$Stub.onTransact:813 
+08-05 15:15:48.328  3931  3953 I Layer   : id=1404 removeFromCurrentState com.viewerapp/com.viewerapp.MainActivity$_28246#0 (61)
+08-05 15:15:48.329  3931  3953 I SurfaceFlinger: id=1404 Removed com.viewerapp/com.viewerapp.MainActivity$_28246#0 (61)
+08-05 15:15:48.331  3931  3953 I Layer   : id=1403 removeFromCurrentState 406b3ad com.viewerapp/com.viewerapp.MainActivity#0 (61)
+08-05 15:15:48.332  3931  3953 I SurfaceFlinger: id=1403 Removed 406b3ad com.viewerapp/com.viewerapp.MainActivity#0 (61)
+08-05 15:15:48.335  4261  5642 I ActivityTaskManager: Removing activity ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25 f}}(activityDestroyed)  from stack callers=com.android.server.wm.ActivityRecord.destroyed:3617 com.android.server.wm.ActivityTaskManagerService.activityDestroyed:2643 android.app.IActivityTaskManager$Stub.onTransact:2232 android.os.Binder.execTransactInternal:1195 android.os.Binder.execTransact:1159 
+08-05 15:15:48.335  3931  3953 I SurfaceFlinger: id=1399 Removed 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:15:48.336  3931  3931 I Layer   : id=1403[1] Destroyed 406b3ad com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:15:48.337  3931  3931 I Layer   : id=1404[1] Destroyed com.viewerapp/com.viewerapp.MainActivity$_28246#0
+08-05 15:15:48.342  3931  3953 I Layer   : id=1391 removeFromCurrentState ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0 (59)
+08-05 15:15:48.342  3931  3953 I Layer   : id=1399 removeFromCurrentState 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (59)
+08-05 15:15:48.342  3931  3953 I SurfaceFlinger: id=1391 Removed ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0 (59)
+08-05 15:15:48.353  3931  3931 I Layer   : id=1391[1] Destroyed ActivityRecord{10009e6 u0 com.viewerapp/.MainActivity t25}#0
+08-05 15:15:48.353  3931  3931 I Layer   : id=1399[1] Destroyed 5c7b041 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:48.353  4261  4491 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.viewerapp
+08-05 15:15:48.353  4261  4491 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.viewerapp&hl=en
+08-05 15:15:48.436  4261  4284 D WindowManager: finishDrawingWindow: Window{4ba74e u0 Application Error: com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:15:48.437  4261  4287 I WindowManager: Reparenting to leash, surface=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3, leashParent=Surface(name=WindowToken{19ad050 android.view.ViewRootImpl$W@5954613})/@0x9d4b6b0
+08-05 15:15:48.438  3931  5801 I SurfaceFlinger: id=1410 createSurf (0x0),-1 flag=24004, Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0
+08-05 15:15:48.438  4261  4287 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash)/@0xb5b9929
+08-05 15:15:48.496  3931  3931 D SurfaceFlinger:      DEVICE | 0x7dc6af6380 | 0000 | RGBA_8888    |    5.0    0.0 1085.0  564.0 |    0 1724 1080 2288 | Application Error: com.viewerapp#0
+08-05 15:15:48.753  4261  4287 I WindowManager: Reparenting to original parent: Surface(name=WindowToken{19ad050 android.view.ViewRootImpl$W@5954613})/@0x9d4b6b0, destroy=true, surface=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3
+08-05 15:15:48.755  3931  5005 I Layer   : id=1410 removeFromCurrentState Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0 (59)
+08-05 15:15:48.756  3931  5005 I SurfaceFlinger: id=1410 Removed Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0 (59)
+08-05 15:15:48.770  3931  3931 I Layer   : id=1410[1] Destroyed Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0
+08-05 15:15:50.573  4261  4598 I Pageboost: db update :com.viewerapp ret 1
+08-05 15:15:50.693  4261  4598 I Pageboost: memUsage collected : 14210 0 0 for com.viewerapp 28246
+08-05 15:15:51.637  4261  4636 I ActivityManager: Killing 28246:com.viewerapp/u0a260 (adj 900): crash
+08-05 15:15:51.638  4261  4636 D ActivityManager: proc ProcessRecord{8bda61a 28246:com.viewerapp/u0a260} already removed. so we skip next process.
+08-05 15:15:51.640  3931  5005 E BufferQueueProducer: [Application Error: com.viewerapp#0](id:f5b000000b3,api:0,p:-1,c:3931) disconnect: not connected (req=1)
+08-05 15:15:51.642  4261  4284 I WindowManager: Reparenting to leash, surface=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3, leashParent=Surface(name=WindowToken{19ad050 android.view.ViewRootImpl$W@5954613})/@0x9d4b6b0
+08-05 15:15:51.643  3931  5801 I SurfaceFlinger: id=1413 createSurf (0x0),-1 flag=24000, Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0
+08-05 15:15:51.644  4261  4284 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash)/@0x850022f
+08-05 15:15:51.646  4261  4284 V WindowManager: removeIfPossible 2, Window{4ba74e u0 Application Error: com.viewerapp}: mAnimatingExit=true caller=com.android.server.wm.WindowState.removeIfPossible:2719 com.android.server.wm.WindowManagerService.removeWindow:2190 com.android.server.wm.Session.remove:199 android.view.ViewRootImpl.dispatchDetachedFromWindow:5715 android.view.ViewRootImpl.doDie:9337 
+08-05 15:15:51.647  4261  4284 V WindowManager: Changing focus from Window{4ba74e u0 Application Error: com.viewerapp EXITING} to Window{83bf71 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:567 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6316 com.android.server.wm.WindowState.setupWindowForRemoveOnExit:2884 com.android.server.wm.WindowState.removeIfPossible:2853 
+08-05 15:15:51.668  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:15:51.956  4261  4287 I WindowManager: Reparenting to original parent: Surface(name=WindowToken{19ad050 android.view.ViewRootImpl$W@5954613})/@0x9d4b6b0, destroy=true, surface=Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3
+08-05 15:15:51.973  3931  3953 I Layer   : id=1413 removeFromCurrentState Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0 (59)
+08-05 15:15:51.973  3931  3953 I SurfaceFlinger: id=1413 Removed Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0 (59)
+08-05 15:15:51.976  4261  4287 I WindowManager: Destroying surface Surface(name=Application Error: com.viewerapp)/@0x8c68040 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:1112 com.android.server.wm.RootWindowContainer.performSurfacePlacement:959 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:182 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:131 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:120 
+08-05 15:15:51.976  3931  3953 I Layer   : id=1409 removeFromCurrentState Application Error: com.viewerapp#0 (59)
+08-05 15:15:51.977  3931  3953 I SurfaceFlinger: id=1409 Removed Application Error: com.viewerapp#0 (59)
+08-05 15:15:51.980  3931  3953 I Layer   : id=1406 removeFromCurrentState 4ba74e Application Error: com.viewerapp#0 (59)
+08-05 15:15:51.981  3931  3953 I SurfaceFlinger: id=1406 Removed 4ba74e Application Error: com.viewerapp#0 (59)
+08-05 15:15:51.989  3931  3931 I Layer   : id=1413[1] Destroyed Surface(name=4ba74e Application Error: com.viewerapp)/@0x64749f3 - animation-leash#0
+08-05 15:15:51.989  3931  3931 I Layer   : id=1406[1] Destroyed 4ba74e Application Error: com.viewerapp#0
+08-05 15:15:51.989  3931  3931 I Layer   : id=1409[1] Destroyed Application Error: com.viewerapp#0
+08-05 15:15:52.560  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:15:52.561  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:15:52.562  4261  4598 I Pageboost: alp for : com.viewerapp , 1
+08-05 15:15:52.566  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:15:52.589  4261  4293 I ActivityManager: Start proc 28378:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:52.610 28378 28378 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:15:52.622  4261  5642 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:15:52.625  4261  5642 D ActivityManager: attachApplicationLocked() app=ProcessRecord{eed30be 28378:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:15:52.631 28378 28378 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:15:52.653  4261  5642 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:15:52.654  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:15:52.654  4261  5642 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:15:52.655  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:15:52.655  4261  5642 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:52.656  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:15:52.661  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:15:52.662  4261  5642 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{fac1758 #26 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=26 sz=0} activity=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:15:52.663  3931  3954 I SurfaceFlinger: id=1418 createSurf (0x0),-1 flag=80004, ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}#0
+08-05 15:15:52.664 28378 28378 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:15:52.665  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:15:52.666 28378 28378 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:15:52.676  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:15:52.677  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 28378
+08-05 15:15:52.677  4261  5642 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:52.678  4261  5642 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}
+08-05 15:15:52.679  4261  5642 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}
+08-05 15:15:52.680  4261  5642 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}
+08-05 15:15:52.681  4261  5642 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:15:52.681  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:15:52.684  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:52.684  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:15:52.684  4261  5642 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:15:52.685  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:15:52.685  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:15:52.739  3931  3954 I SurfaceFlinger: id=1419 createSurf (0x0),-1 flag=80004, 653b8fc Splash Screen com.viewerapp#0
+08-05 15:15:52.741  4261  4637 V ActivityManager: Changed top to 10260,ProcessRecord{eed30be 28378:com.viewerapp/u0a260}
+08-05 15:15:52.744  4261  4287 V WindowManager: Relayout Window{653b8fc u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:15:52.746  3931  3954 I SurfaceFlinger: id=1420 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:15:52.747  4261  4287 D WindowManager: makeSurface duration=1 name=Splash Screen com.viewerapp
+08-05 15:15:52.752  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:15:52.754 28378 28378 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:15:52.759 28378 28378 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:15:52.770  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:15:52.771  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:15:52.771  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:3 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:15:52.771  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:15:52.774  4261  4287 D WindowManager: finishDrawingWindow: Window{653b8fc u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:15:52.775  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:52.775  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:52.778  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:15:52.779  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:15:52.779  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:15:52.779  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:15:52.779  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:15:52.780  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:15:52.780  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{fac1758 #26 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=26 sz=1}
+08-05 15:15:52.781 28378 28378 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:15:52.783  4261  4287 D WindowManager: 	Add container=Task{fac1758 #26 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=26 sz=1}
+08-05 15:15:52.792  3931  3954 I SurfaceFlinger: id=1426 createSurf (0x0),-1 flag=80000, 7c79aca ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:52.796  4261  4287 I WindowManager: container=Task{fac1758 #26 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=26 sz=1}
+08-05 15:15:52.798 28378 28378 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:15:52.836  4261  4598 I Pageboost: memUsage collected : 5430 0 0 for com.viewerapp 28378
+08-05 15:15:52.836  3931  3931 D SurfaceFlinger:      CLIENT | 0x7dc6af5480 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  822 1781 1005 1964 | Splash Screen com.viewerapp#0
+08-05 15:15:52.882  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:15:52.959 28378 28422 E AndroidRuntime: Process: com.viewerapp, PID: 28378
+08-05 15:15:52.967  4261  7529 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:15:52.969  4261  7529 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:15:53.061  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:15:53.061  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:15:53.069  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=3
+08-05 15:15:53.249  4261  6065 I ActivityManager: Process com.viewerapp (pid 28378) has died: prcp CRE (120,808)
+08-05 15:15:53.250  4261  6065 I ActivityTaskManager: Removing activity ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26 f}}(appDied)  from stack callers=com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.processActivity:565 com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.process:480 com.android.server.wm.ActivityStack.handleAppDied:3395 com.android.server.wm.RootWindowContainer.handleAppDied:3676 com.android.server.wm.ActivityTaskManagerService$LocalService.handleAppDied:8304 
+08-05 15:15:53.276  4261  6109 E WindowManager: win=Window{653b8fc u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:15:53.276  4261  6109 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0x194d562 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:15:53.276  3931  3954 I Layer   : id=1420 removeFromCurrentState Splash Screen com.viewerapp#0 (61)
+08-05 15:15:53.279  3931  3954 I SurfaceFlinger: id=1426 Removed 7c79aca ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:15:53.280  4261  6109 D WindowManager: 	container=Task{fac1758 #26 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=26 sz=0}
+08-05 15:15:53.282  3931  3954 I Layer   : id=1418 removeFromCurrentState ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}#0 (61)
+08-05 15:15:53.282  3931  3954 I Layer   : id=1426 removeFromCurrentState 7c79aca ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:15:53.282  3931  3954 I Layer   : id=1419 removeFromCurrentState 653b8fc Splash Screen com.viewerapp#0 (61)
+08-05 15:15:53.282  3931  3954 I Layer   : id=1419 removeFromCurrentState 653b8fc Splash Screen com.viewerapp#0 (61)
+08-05 15:15:53.282  3931  3954 I Layer   : id=1418 removeFromCurrentState ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}#0 (61)
+08-05 15:15:53.282  3931  3954 I Layer   : id=1426 removeFromCurrentState 7c79aca ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:15:53.283  3931  5801 I SurfaceFlinger: id=1419 Removed 653b8fc Splash Screen com.viewerapp#0 (61)
+08-05 15:15:53.284  3931  5801 I SurfaceFlinger: id=1418 Removed ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}#0 (61)
+08-05 15:15:53.284  3931  5801 I SurfaceFlinger: id=1420 Removed Splash Screen com.viewerapp#0 (61)
+08-05 15:15:53.290  3931  3931 I Layer   : id=1418[1] Destroyed ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t26}#0
+08-05 15:15:53.290  3931  3931 I Layer   : id=1419[1] Destroyed 653b8fc Splash Screen com.viewerapp#0
+08-05 15:15:53.290  3931  3931 I Layer   : id=1426[1] Destroyed 7c79aca ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:15:53.292  3931  3931 I Layer   : id=1420[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:15:53.314  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:15:53.414  4261  4491 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.viewerapp
+08-05 15:15:53.414  4261  4491 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.viewerapp&hl=en
+08-05 15:15:53.473  4261  4286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{362a43b u0 com.viewerapp/.MainActivity t-1 f}}
+08-05 15:15:57.726  4261  4598 I Pageboost: db update :com.viewerapp ret 1
+08-05 15:20:48.662  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:20:48.663  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:20:48.664  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:20:48.671  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:20:48.703  4261  5164 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:20:48.704  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:20:48.705  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:20:48.710  4261  4293 I ActivityManager: Start proc 28538:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:20:48.711  4261  5164 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{c429834 #27 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=27 sz=0} activity=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:20:48.713  3931  5005 I SurfaceFlinger: id=1432 createSurf (0x0),-1 flag=80004, ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}#0
+08-05 15:20:48.719 28538 28538 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:20:48.725  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:20:48.725  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 28538
+08-05 15:20:48.728  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:20:48.732  4261  5064 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:20:48.734  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:20:48.737  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:20:48.739  3931  5005 I SurfaceFlinger: id=1433 createSurf (0x0),-1 flag=80004, f4ecc9 Splash Screen com.viewerapp#0
+08-05 15:20:48.740  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.740  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.741  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:20:48.745  4261  4287 V WindowManager: Relayout Window{f4ecc9 u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:20:48.747  3931  5005 I SurfaceFlinger: id=1434 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:20:48.748  4261  4287 D WindowManager: makeSurface duration=1 name=Splash Screen com.viewerapp
+08-05 15:20:48.750  4261  4287 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.751  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:20:48.769  4261  4287 D WindowManager: finishDrawingWindow: Window{f4ecc9 u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:20:48.793  4261  4922 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:20:48.795  4261  4922 D ActivityManager: attachApplicationLocked() app=ProcessRecord{8304b88 28538:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:20:48.796  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.797  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.798  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}
+08-05 15:20:48.799  4261  4922 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:20:48.799  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:20:48.800  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:20:48.801  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:20:48.801  4261  4922 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:20:48.801  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:20:48.801  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:20:48.804 28538 28538 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:20:48.806  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{c429834 #27 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=27 sz=1}
+08-05 15:20:48.809  4261  4287 D WindowManager: 	Add container=Task{c429834 #27 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=27 sz=1}
+08-05 15:20:48.816  3931  5005 I SurfaceFlinger: id=1440 createSurf (0x0),-1 flag=80000, 92ae146 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:20:48.819  4261  4287 I WindowManager: container=Task{c429834 #27 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=27 sz=1}
+08-05 15:20:48.820  4261  4286 V ActivityManager: Changed top to 10260,ProcessRecord{8304b88 28538:com.viewerapp/u0a260}
+08-05 15:20:48.832 28538 28538 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:20:48.833 28538 28538 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:20:48.847  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:20:48.847  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:20:48.849  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:20:48.849  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:20:48.849  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:20:48.849  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:20:48.850  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:20:48.850  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:20:48.853  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:20:48.857 28538 28538 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:20:48.859  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:20:48.859 28538 28538 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:20:48.860  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:20:48.860  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:4 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:20:48.860  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:20:48.868 28538 28538 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:20:48.879 28538 28538 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:20:48.882  3931  3931 D SurfaceFlinger:      CLIENT | 0x7dc6af4580 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  822 1781 1005 1964 | Splash Screen com.viewerapp#0
+08-05 15:20:48.984  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:20:49.010 28538 28598 E AndroidRuntime: Process: com.viewerapp, PID: 28538
+08-05 15:20:49.017  4261  5064 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:20:49.019  4261  5064 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:20:49.081  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:20:49.095  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=4
+08-05 15:20:49.108  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:20:49.118  4261  5642 I ActivityManager: Process com.viewerapp (pid 28538) has died: prcp CRE (199,810)
+08-05 15:20:49.119  4261  5642 I ActivityTaskManager: Removing activity ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27 f}}(appDied)  from stack callers=com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.processActivity:565 com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.process:480 com.android.server.wm.ActivityStack.handleAppDied:3395 com.android.server.wm.RootWindowContainer.handleAppDied:3676 com.android.server.wm.ActivityTaskManagerService$LocalService.handleAppDied:8304 
+08-05 15:20:49.149  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:20:49.160  4261  5642 E WindowManager: win=Window{f4ecc9 u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:20:49.161  4261  5642 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0xcaac59f called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:20:49.161  3931  5005 I Layer   : id=1434 removeFromCurrentState Splash Screen com.viewerapp#0 (61)
+08-05 15:20:49.163  3931  5005 I SurfaceFlinger: id=1440 Removed 92ae146 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:20:49.165  4261  5642 D WindowManager: 	container=Task{c429834 #27 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=27 sz=0}
+08-05 15:20:49.167  3931  5005 I Layer   : id=1432 removeFromCurrentState ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}#0 (61)
+08-05 15:20:49.167  3931  5005 I Layer   : id=1440 removeFromCurrentState 92ae146 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:20:49.167  3931  5005 I Layer   : id=1433 removeFromCurrentState f4ecc9 Splash Screen com.viewerapp#0 (61)
+08-05 15:20:49.167  3931  5005 I Layer   : id=1433 removeFromCurrentState f4ecc9 Splash Screen com.viewerapp#0 (61)
+08-05 15:20:49.167  3931  5005 I Layer   : id=1432 removeFromCurrentState ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}#0 (61)
+08-05 15:20:49.167  3931  5005 I Layer   : id=1440 removeFromCurrentState 92ae146 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:20:49.168  3931  5005 I SurfaceFlinger: id=1433 Removed f4ecc9 Splash Screen com.viewerapp#0 (61)
+08-05 15:20:49.168  3931  5005 I SurfaceFlinger: id=1434 Removed Splash Screen com.viewerapp#0 (61)
+08-05 15:20:49.168  3931  5005 I SurfaceFlinger: id=1432 Removed ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}#0 (61)
+08-05 15:20:49.172  3931  3931 I Layer   : id=1433[1] Destroyed f4ecc9 Splash Screen com.viewerapp#0
+08-05 15:20:49.172  3931  3931 I Layer   : id=1432[1] Destroyed ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t27}#0
+08-05 15:20:49.172  3931  3931 I Layer   : id=1440[1] Destroyed 92ae146 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:20:49.177  3931  3931 I Layer   : id=1434[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:20:49.522  4261  4286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{a096f07 u0 com.viewerapp/.MainActivity t-1 f}}
+08-05 15:20:53.781  4261  4598 I Pageboost: db update :com.viewerapp ret 1
+08-05 15:22:47.439  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:22:47.441  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:22:47.441  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:22:47.447  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:22:47.472  4261  4293 I ActivityManager: Start proc 28643:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:22:47.492 28643 28643 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:22:47.508  4261  6035 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:22:47.510  4261  6035 D ActivityManager: attachApplicationLocked() app=ProcessRecord{7df2eb2 28643:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:22:47.516 28643 28643 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:22:47.541 28643 28643 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:22:47.542 28643 28643 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:22:47.560  4261  6035 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:22:47.561  4261  6035 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:22:47.561  4261  6035 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:22:47.566  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:22:47.566  4261  6035 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{3070275 #28 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=28 sz=0} activity=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:22:47.567  3931  3954 I SurfaceFlinger: id=1446 createSurf (0x0),-1 flag=80004, ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}#0
+08-05 15:22:47.567  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:22:47.568  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:22:47.573  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:22:47.579  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:22:47.587  4261  5064 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:22:47.613  4261  5064 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}
+08-05 15:22:47.613  4261  5064 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}
+08-05 15:22:47.614  4261  5064 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}
+08-05 15:22:47.615  4261  5064 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:22:47.615  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:22:47.618  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:22:47.618  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:22:47.618  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:22:47.618  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:22:47.618  4261  5064 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:22:47.623  4261  5643 V ActivityManager: Changed top to 10260,ProcessRecord{7df2eb2 28643:com.viewerapp/u0a260}
+08-05 15:22:47.624  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:22:47.625  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:22:47.625  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 28643
+08-05 15:22:47.627 28643 28643 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:22:47.628 28643 28643 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:22:47.631  3931  3954 I SurfaceFlinger: id=1447 createSurf (0x0),-1 flag=80004, f32560e Splash Screen com.viewerapp#0
+08-05 15:22:47.633  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:22:47.634  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:22:47.634  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:2 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:22:47.634  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:22:47.636  4261  4287 V WindowManager: Relayout Window{f32560e u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:22:47.636 28643 28643 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:22:47.639  3931  3954 I SurfaceFlinger: id=1448 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:22:47.639  4261  4287 D WindowManager: makeSurface duration=2 name=Splash Screen com.viewerapp
+08-05 15:22:47.650 28643 28643 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:22:47.653  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:22:47.653  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:22:47.657  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:22:47.660  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:22:47.660  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:22:47.661  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:22:47.661  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:22:47.662  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:22:47.666  4261  4287 D WindowManager: finishDrawingWindow: Window{f32560e u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:22:47.673  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{3070275 #28 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=28 sz=1}
+08-05 15:22:47.675  4261  4287 D WindowManager: 	Add container=Task{3070275 #28 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=28 sz=1}
+08-05 15:22:47.682  3931  3954 I SurfaceFlinger: id=1454 createSurf (0x0),-1 flag=80000, 6ecc75f ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:22:47.686  4261  4287 I WindowManager: container=Task{3070275 #28 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=28 sz=1}
+08-05 15:22:47.725  3931  3931 D SurfaceFlinger:      CLIENT | 0x7dc6af5980 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  814 1773 1006 1965 | Splash Screen com.viewerapp#0
+08-05 15:22:47.755  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:22:47.797 28643 28701 E AndroidRuntime: Process: com.viewerapp, PID: 28643
+08-05 15:22:47.804  4261  5064 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:22:47.806  4261  5064 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:22:47.884  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:22:47.892  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=5
+08-05 15:22:47.898  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:22:47.899  3931  3954 I SurfaceFlinger: id=1458 createSurf (0x0),-1 flag=80004, 8a50246 com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:22:47.942  4261  5164 V WindowManager: Setting visibility of Window{8a50246 u0 com.viewerapp/com.viewerapp.MainActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1004 com.android.server.wm.ActivityRecord.setClientVisible:6401 com.android.server.wm.ActivityRecord.onAnimationFinished:7156 com.android.server.wm.WindowContainer.doAnimationFinished:2626 com.android.server.wm.WindowContainer.onAnimationFinished:2635 
+08-05 15:22:47.944  4261  5164 E WindowManager: win=Window{f32560e u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:22:47.944  4261  5164 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0x4658191 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:22:47.945  3931  4401 I Layer   : id=1448 removeFromCurrentState Splash Screen com.viewerapp#0 (62)
+08-05 15:22:47.946  4261  5164 D ActivityTaskManager: finishFixedRotationTransform, r=ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28 f}}, caller=com.android.server.wm.WindowToken.finishFixedRotationTransform:664 com.android.server.wm.DisplayContent$FixedRotationTransitionListener.onAppTransitionFinishedLocked:7026 com.android.server.wm.AppTransition.notifyAppTransitionFinishedLocked:543 com.android.server.wm.ActivityRecord.onAnimationFinished:7177 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:22:47.950  4261  5164 D WindowManager: 	container=Task{3070275 #28 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=28 sz=1}
+08-05 15:22:47.953  3931  4401 I Layer   : id=1447 removeFromCurrentState f32560e Splash Screen com.viewerapp#0 (62)
+08-05 15:22:47.955  3931  5005 I SurfaceFlinger: id=1447 Removed f32560e Splash Screen com.viewerapp#0 (62)
+08-05 15:22:47.955  3931  5005 I SurfaceFlinger: id=1448 Removed Splash Screen com.viewerapp#0 (62)
+08-05 15:22:47.965  3931  3931 I Layer   : id=1448[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:22:47.965  3931  3931 I Layer   : id=1447[1] Destroyed f32560e Splash Screen com.viewerapp#0
+08-05 15:22:47.997  4261  7528 I WindowManager: WIN DEATH: Window{8a50246 u0 com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:22:47.998  4261  7528 W InputDispatcher: Attempted to unregister already unregistered input channel '8a50246 com.viewerapp/com.viewerapp.MainActivity (server)'
+08-05 15:22:48.001  3931  5005 I Layer   : id=1458 removeFromCurrentState 8a50246 com.viewerapp/com.viewerapp.MainActivity#0 (57)
+08-05 15:22:48.004  3931  5005 I SurfaceFlinger: id=1458 Removed 8a50246 com.viewerapp/com.viewerapp.MainActivity#0 (57)
+08-05 15:22:48.018  3931  3931 I Layer   : id=1458[1] Destroyed 8a50246 com.viewerapp/com.viewerapp.MainActivity#0
+08-05 15:22:48.046  4261  4654 I ActivityManager: Process com.viewerapp (pid 28643) has died: prcp CRE (206,811)
+08-05 15:22:48.048  4261  4654 I ActivityTaskManager: Removing activity ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28 f}}(appDied)  from stack callers=com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.processActivity:565 com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.process:480 com.android.server.wm.ActivityStack.handleAppDied:3395 com.android.server.wm.RootWindowContainer.handleAppDied:3676 com.android.server.wm.ActivityTaskManagerService$LocalService.handleAppDied:8304 
+08-05 15:22:48.048  3931  4401 I SurfaceFlinger: id=1454 Removed 6ecc75f ActivityRecordInputSink com.viewerapp/.MainActivity#0 (56)
+08-05 15:22:48.052  3931  4401 I Layer   : id=1446 removeFromCurrentState ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}#0 (56)
+08-05 15:22:48.052  3931  4401 I Layer   : id=1454 removeFromCurrentState 6ecc75f ActivityRecordInputSink com.viewerapp/.MainActivity#0 (56)
+08-05 15:22:48.053  3931  4401 I SurfaceFlinger: id=1446 Removed ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}#0 (56)
+08-05 15:22:48.064  3931  3931 I Layer   : id=1446[1] Destroyed ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t28}#0
+08-05 15:22:48.064  3931  3931 I Layer   : id=1454[1] Destroyed 6ecc75f ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:22:48.068  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:22:48.308  4261  4286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{a0a05ac u0 com.viewerapp/.MainActivity t-1 f}}
+08-05 15:22:52.679  4261  4598 I Pageboost: db update :com.viewerapp ret 1
+08-05 15:24:00.531  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:24:00.533  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:24:00.534  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:24:00.539  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:24:00.561  4261  4293 I ActivityManager: Start proc 28741:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:24:00.583 28741 28741 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:24:00.597  4261  4654 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:24:00.602  4261  4654 D ActivityManager: attachApplicationLocked() app=ProcessRecord{cce6e76 28741:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:24:00.608 28741 28741 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:24:00.637  4261  5166 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:24:00.638  4261  5166 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:24:00.638  4261  5166 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:24:00.640  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:24:00.640 28741 28741 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:24:00.641  4916  4964 I AppIconSolution: start to load, pkg=com.viewerapp, bg=192-192, dr=192-192, forDefault=true, density=640
+08-05 15:24:00.642 28741 28741 D LoadedApk: LoadedApk::makeApplication() appContext=android.app.ContextImpl@8c48bd9 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620
+08-05 15:24:00.643  4916  4964 I AppIconSolution: getIconScale, pkg=com.viewerapp, size=192, iconScale=IconScale[alpha=19, scale=1.0, isCrop=true]
+08-05 15:24:00.645  4261  5166 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{cf3cd49 #29 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=29 sz=0} activity=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:24:00.649  3931  4401 I SurfaceFlinger: id=1460 createSurf (0x0),-1 flag=80004, ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0
+08-05 15:24:00.653  4916  4964 I AppIconSolution: default container[CROP], pkg=com.viewerapp, bg=154-154, dr=192-192
+08-05 15:24:00.659  4916  4964 I LauncherActivityInfo: packageName: com.viewerapp, useThemeIcon: false, height: 154, width: 154, density: 640
+08-05 15:24:00.683  4261  4922 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:24:00.742  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}
+08-05 15:24:00.743  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}
+08-05 15:24:00.744  4261  4922 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}
+08-05 15:24:00.746  4261  4922 D PkgDataHelper: notifyAppCreate(), pkgName: com.viewerapp, sendRet: true
+08-05 15:24:00.749  4261  4922 D MARsPolicyManager: onPackageResumedFG pkgName = com.viewerapp, userId = 0
+08-05 15:24:00.754  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.viewerapp
+08-05 15:24:00.754  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_TASK_FOCUSED, focusedComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:24:00.755  4261  4408 D GameManagerService:   handleTaskFocused(), pkgName: com.viewerapp, clsName: com.viewerapp.MainActivity, userID:0
+08-05 15:24:00.755  4261  4408 D GameManagerService:   handleResume(). pkgName: com.viewerapp, isTunableApp: null
+08-05 15:24:00.755  4261  4408 D GameManagerService: notifyFocusInOut(). of pkg: com.viewerapp, type: 4, isMinimized: false, isTunableApp: false
+08-05 15:24:00.757  3931  4401 I SurfaceFlinger: id=1461 createSurf (0x0),-1 flag=80004, e546a86 Splash Screen com.viewerapp#0
+08-05 15:24:00.761  4261  4287 V WindowManager: Relayout Window{e546a86 u0 Splash Screen com.viewerapp}: viewVisibility=0 req=1080x2340
+08-05 15:24:00.766  3931  3953 I SurfaceFlinger: id=1462 createSurf (1080x2340),1 flag=404, Splash Screen com.viewerapp#0
+08-05 15:24:00.767  4261  4287 D WindowManager: makeSurface duration=4 name=Splash Screen com.viewerapp
+08-05 15:24:00.767  4261  4654 V ActivityManager: Changed top to 10260,ProcessRecord{cce6e76 28741:com.viewerapp/u0a260}
+08-05 15:24:00.769  4261  4261 I Pageboost: package com.viewerapp
+08-05 15:24:00.769  4261  4598 I Pageboost: Record App IO : com.viewerapp pid 28741
+08-05 15:24:00.769  4261  4284 D SehCodecSolutionService: Update top [com.viewerapp]
+08-05 15:24:00.771 28741 28741 W SoLoader: Recording new base apk path: /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk
+08-05 15:24:00.773  4261  4500 D PkgPredictorService: com.viewerapp go to foreground!
+08-05 15:24:00.774  4261  4500 D PkgPredictorService: previous pkgs: com.viewerapp,com.viewerapp,com.viewerapp running pkg: com.viewerapp, uid: 0 is system: false
+08-05 15:24:00.774  4261  4500 D PkgPredictorService-Collector:  (hour:15 day:3 previous:[com.viewerapp, com.viewerapp, com.viewerapp] activityName:unknown running:com.viewerapp userId:0 screenOrientation:0 wifi:1 bt:0 predictTime:2 apkVersion:1.0 consumeTime:-1 preloaded:false>)
+08-05 15:24:00.774  4261  4500 D PkgPredictorService-NapPreloadController: User using: com.viewerapp
+08-05 15:24:00.776 28741 28741 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a]]
+08-05 15:24:00.790  4261  4287 D WindowManager: finishDrawingWindow: Window{e546a86 u0 Splash Screen com.viewerapp} mDrawState=DRAW_PENDING
+08-05 15:24:00.791 28741 28741 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/lib/arm64 flags = 0]]
+08-05 15:24:00.802  4261  4287 D WindowManager: createAnimationAdapter(): container=Task{cf3cd49 #29 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=29 sz=1}
+08-05 15:24:00.803 28741 28741 W linker  : Warning: "/data/app/~~MkVfhISaT0mowmHRiXhzbQ==/com.viewerapp-e1ReNuNrStgGx_Qr4bQHcQ==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+08-05 15:24:00.804  4261  4287 D WindowManager: 	Add container=Task{cf3cd49 #29 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=29 sz=1}
+08-05 15:24:00.811  3931  3953 I SurfaceFlinger: id=1468 createSurf (0x0),-1 flag=80000, 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:24:00.815  4261  4287 I WindowManager: container=Task{cf3cd49 #29 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=29 sz=1}
+08-05 15:24:00.836  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:24:00.836  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:24:00.838  4261  4286 D SemGameManager: isGamePackage(), pkgName=com.viewerapp
+08-05 15:24:00.839  4261  4286 D GameManagerService: identifyGamePackage. com.viewerapp, mCurrentUserId: 0, callerUserId: 0
+08-05 15:24:00.840  4261  4286 D PkgDataHelper: getGamePkgData(). com.viewerapp
+08-05 15:24:00.840  4261  4286 D GameManagerService: noteResumeComponent(), received resumed-component: com.viewerapp
+08-05 15:24:00.840  4261  4408 D GameManagerService: onLooperPrepared(), msg: MSG_APP_RESUME, resumeComponent: ComponentInfo{com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:24:00.840  4261  4286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.viewerapp
+08-05 15:24:00.859  3931  3931 D SurfaceFlinger:      CLIENT | 0x7d42c14800 | 0002 | RGBA_8888    |    0.0 1010.0 1080.0 2090.0 |  822 1781 1005 1964 | Splash Screen com.viewerapp#0
+08-05 15:24:00.900  4261  4641 D MdnieScenarioControlService:  packageName : com.viewerapp    className : com.viewerapp.MainActivity
+08-05 15:24:00.944 28741 28797 E AndroidRuntime: Process: com.viewerapp, PID: 28741
+08-05 15:24:00.948  4261  4922 W ActivityManager: crash : com.viewerapp,10260
+08-05 15:24:00.951  4261  4922 W ActivityTaskManager:   Force finishing activity com.viewerapp/.MainActivity
+08-05 15:24:01.047  6073  6073 I SDHMS:PowerAnomaly:GATHERERAPPERROR: update AppError : uid=10260, pkg=com.viewerapp, errorType=crash
+08-05 15:24:01.056  4261  4286 D GameManagerService: notePauseComponent(), received paused-component: com.viewerapp
+08-05 15:24:01.059  6073  6073 I SDHMS:PowerAnomaly:ANALYZERAPPERROR: analyze app error : uid=10260, pkg=com.viewerapp, appErrorCount=6
+08-05 15:24:01.090  4261  5643 I ActivityManager: Process com.viewerapp (pid 28741) has died: prcp CRE (210,816)
+08-05 15:24:01.092  4261  5643 I ActivityTaskManager: Removing activity ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29 f}}(appDied)  from stack callers=com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.processActivity:565 com.android.server.wm.ActivityStack$RemoveHistoryRecordsForApp.process:480 com.android.server.wm.ActivityStack.handleAppDied:3395 com.android.server.wm.RootWindowContainer.handleAppDied:3676 com.android.server.wm.ActivityTaskManagerService$LocalService.handleAppDied:8304 
+08-05 15:24:01.109  4261  6106 E WindowManager: win=Window{e546a86 u0 Splash Screen com.viewerapp EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.ActivityRecord.onAnimationFinished:7175 com.android.server.wm.WindowContainer.doAnimationFinished:2626 
+08-05 15:24:01.110  4261  6106 I WindowManager: Destroying surface Surface(name=Splash Screen com.viewerapp)/@0x24ef4b3 called by com.android.server.wm.WindowStateAnimator.destroySurface:1794 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:765 com.android.server.wm.WindowState.destroySurfaceUnchecked:3949 com.android.server.wm.WindowState.destroySurface:3923 com.android.server.wm.ActivityRecord.destroySurfaces:5261 com.android.server.wm.ActivityRecord.destroySurfaces:5242 com.android.server.wm.WindowState.onExitAnimationDone:5654 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 
+08-05 15:24:01.110  3931  3953 I Layer   : id=1462 removeFromCurrentState Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.112  3931  3953 I SurfaceFlinger: id=1468 Removed 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:24:01.114  4261  6106 D WindowManager: 	container=Task{cf3cd49 #29 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=29 sz=0}
+08-05 15:24:01.116  3931  5801 I Layer   : id=1460 removeFromCurrentState ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1468 removeFromCurrentState 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1461 removeFromCurrentState e546a86 Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1460 removeFromCurrentState ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1468 removeFromCurrentState 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1461 removeFromCurrentState e546a86 Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1461 removeFromCurrentState e546a86 Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1460 removeFromCurrentState ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0 (61)
+08-05 15:24:01.116  3931  5801 I Layer   : id=1468 removeFromCurrentState 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0 (61)
+08-05 15:24:01.117  3931  5801 I SurfaceFlinger: id=1462 Removed Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.117  3931  5801 I SurfaceFlinger: id=1461 Removed e546a86 Splash Screen com.viewerapp#0 (61)
+08-05 15:24:01.117  3931  5801 I SurfaceFlinger: id=1460 Removed ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0 (61)
+08-05 15:24:01.130  3931  3931 I Layer   : id=1462[1] Destroyed Splash Screen com.viewerapp#0
+08-05 15:24:01.130  3931  3931 I Layer   : id=1461[1] Destroyed e546a86 Splash Screen com.viewerapp#0
+08-05 15:24:01.131  3931  3931 I Layer   : id=1460[1] Destroyed ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t29}#0
+08-05 15:24:01.131  3931  3931 I Layer   : id=1468[1] Destroyed 3aafc02 ActivityRecordInputSink com.viewerapp/.MainActivity#0
+08-05 15:24:01.192  4261  4284 I ReentryCounter: app reentry info: app name: com.viewerapp  reentry count:1
+08-05 15:24:01.455  4261  4286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{4221913 u0 com.viewerapp/.MainActivity t-1 f}}
+08-05 15:24:05.801  4261  4598 I Pageboost: db update :com.viewerapp ret 1
+08-05 15:28:07.720  4916  4916 W AppStartUtils: sendActiveLaunchBroadcast() v.hasOnClickListeners() : true, iconInfo : AppInfo(id=64 type=APP hidden=0 container=all_apps screen=0 rank=19 user=UserHandle{0} title=viewerapp componentName=ComponentInfo{com.viewerapp/com.viewerapp.MainActivity} screenType=0)
+08-05 15:28:07.722  4261  4590 I Pageboost: start alp : com.viewerapp
+08-05 15:28:07.723  4261  4598 I Pageboost: alp for : com.viewerapp , 0
+08-05 15:28:07.727  4261  4286 D StorageManagerService: getExternalStorageMountMode: uid=10260 packageName=com.viewerapp
+08-05 15:28:07.749  4261  4293 I ActivityManager: Start proc 28847:com.viewerapp/u0a260 for activelaunch {com.viewerapp/com.viewerapp.MainActivity}
+08-05 15:28:07.775 28847 28847 E com.viewerapp: Not starting debugger since process cannot load the jdwp agent.
+08-05 15:28:07.788  4261  4654 I ActivityManager: DSS OFF for com.viewerapp
+08-05 15:28:07.793  4261  4654 D ActivityManager: attachApplicationLocked() app=ProcessRecord{75b8e59 28847:com.viewerapp/u0a260} app.isolatedEntryPoint=null instr2=null
+08-05 15:28:07.799 28847 28847 D ActivityThread: handleBindApplication()++ app=com.viewerapp
+08-05 15:28:07.819  4261  7528 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.viewerapp/.MainActivity bnds=[795,1750][1041,2113]} from uid 10138
+08-05 15:28:07.820  4261  7528 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{77d8a2a u0 com.viewerapp/.MainActivity display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1
+08-05 15:28:07.820  4261  7528 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{77d8a2a u0 com.viewerapp/.MainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@238031438 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:28:07.827  4261  7528 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{708d01b #30 visible=false type=standard mode=fullscreen translucent=true A=10260:com.viewerapp U=0 StackId=30 sz=0} activity=ActivityRecord{77d8a2a u0 com.viewerapp/.MainActivity t-1} display-from-task=0 task-display-area=DefaultTaskDisplayArea@238031438 display-area-windowing-mode=1 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display maximized-bounds
+08-05 15:28:07.828  3931  3954 I SurfaceFlinger: id=1474 createSurf (0x0),-1 flag=80004, ActivityRecord{77d8a2a u0 com.viewerapp/.MainActivity t30}#0
+08-05 15:28:07.829  4916  4964 I AppIconSolution: getThemeIconWithBG called with public API, pkg = com.viewerapp
+08-05 15:28:07.829 28847 28847 D ActivityThread: ActivityThread::handleMakeApplication() data=AppBindData{appInfo=ApplicationInfo{15b6a52 com.viewerapp}} appContext=android.app.ContextImpl@bbd7123 appContext.mOpPackageName=com.viewerapp appContext.mBasePackageName=com.viewerapp appContext.mPackageInfo=android.app.LoadedApk@c340620 data.restrictedBackupMode= false data.providers= [ContentProviderInfo{name=com.viewerapp.provider className=com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}, ContentProviderInfo{name=com.viewerapp.androidx-startup className=androidx.startup.InitializationProvider}, ContentProviderInfo{name=com.viewerapp.imagepickerprovider className=com.imagepicker.ImagePickerProvider}] Caller=android.app.ActivityThread.handleBindApplication:7500 android.app.ActivityThread.access$1400:301 android.app.ActivityThread$H.handleMessage:2156 android.os.Handler.dispatchMessage:106 android.os.Looper.loop:246 
+08-05 15:28:07.830  4916  4964 I AppIconSolution: start to 

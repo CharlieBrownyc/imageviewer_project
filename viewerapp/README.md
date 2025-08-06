@@ -233,4 +233,33 @@ Navigation | @react-navigation/native, @react-navigation/bottom-tabs | 탭 UI |
 
 ## Troubleshooting
 
+1. Build시 `Unable to load script...`
+  ```yaml
+  # 오류메세지
+  Unable to load script. Make sure you're either running a Metro server (run 'react-native start') or that your bundle 'index.android.bundle' is packaged correctly for release.  
+
+  # 빌드하기(배포시)
+  ./gradlew assembleRelease <- 리눅스 기준
+  gradlew.bat assembleRelease <- 윈도우 기준
+
+  # 빌드하기(디버그시)
+  ./gradlew assembleDebug <- 리눅스 기준
+  gradlew.bat assembleDebuge <- 윈도우 기준
+
+  # 빌드 후 디바이스에서 직접 테스트
+  react-native run-android --variant=release
+
+  # 오류발생
+  Unable to load script. Make sure you're either running a Metro server (run 'react-native start') or that your bundle 'index.android.bundle' is packaged correctly for release.
+
+  # 해결
+  android\app\src\main\assets\모든 파일삭제
+
+  # 아래 명령어 입력 후 엔터
+  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
+
+  # 아래 파일 생성여부 확인
+  android\app\src\main\assets\index.android.bundle
+  ```
+
 ## Learn More

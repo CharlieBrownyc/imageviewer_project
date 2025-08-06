@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const SERVER_URL = 'http://192.168.0.103:3000/upload'; // 예: http://192.168.0.5:3000/upload
 
-const UploadImageButton = () => {
+const UploadButton = () => {
   const pickImageAndUpload = async () => {
     const result = await launchImageLibrary({
       mediaType: 'photo',
@@ -45,4 +45,4 @@ const UploadImageButton = () => {
   );
 };
 
-export default UploadImageButton;
+export default UploadButton;

@@ -13,15 +13,18 @@ import {
 } from 'react-native';
 import { CameraRoll } from '@react-native-camera-roll/camera-roll';
 import ImageViewing from 'react-native-image-viewing';
-import UploadImageButton from './UploadButton';
+import UploadImageButton from './UploadImageButton';
 import ImageEditorButton from './ImageEditorButton';
 
 const screenWidth = Dimensions.get('window').width;
 const imageMargin = 4;
 const numColumns = 3;
 const imageSize = (screenWidth - imageMargin * (numColumns + 1)) / numColumns;
+type Props = {
+  serverUrl: string;
+};
 
-const LocalImagesScreen = () => {
+const LocalImagesScreen = ({ serverUrl }: Props) => {
   const [photos, setPhotos] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [visible, setVisible] = useState<boolean>(false);
@@ -105,7 +108,13 @@ const LocalImagesScreen = () => {
           />
         </View>
         <View style={styles.buttonWrapper}>
-          <UploadImageButton />
+          <UploadImageButton
+            onUploadSuccess={() => {
+              setLoading(true); // 로딩 인디케이터 표시
+              setRefreshTrigger(prev => prev + 1); // 트리거 변경 → useEffect 재실행
+            }}
+            serverUrl={serverUrl}
+          />
         </View>
       </View>
       {loading ? (

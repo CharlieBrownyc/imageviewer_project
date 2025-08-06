@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { View, FlatList, Image, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import React, { useCallback, useEffect, useState } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+} from 'react-native';
 import axios from 'axios';
 import UploadImageButton from './UploadImageButton';
 import ImageViewing from 'react-native-image-viewing';
 
-const BASE_URL = 'http://192.168.0.103:3000'; // 서버 주소
-const LIST_URL = `${BASE_URL}/images`;
+// const BASE_URL = 'http://192.168.0.103:3000'; // 서버 주소
+// const LIST_URL = `${BASE_URL}/images`;
 
 type ServerImage = {
   id: string;
@@ -13,37 +20,41 @@ type ServerImage = {
   url: string; // ex: "/uploads/xxx.jpg"
   uploadedAt: string;
 };
-
-const ServerImagesScreen = () => {
+type Props = {
+  serverUrl: string;
+};
+const ServerImagesScreen = ({ serverUrl }: Props) => {
   const [images, setImages] = useState<ServerImage[]>([]);
   const [isViewerVisible, setViewerVisible] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const fetchImages = async () => {
+  const fetchImages = useCallback(async () => {
     try {
-      const res = await axios.get<ServerImage[]>(LIST_URL);
-      setImages(res.data.sort((a, b) => b.uploadedAt.localeCompare(a.uploadedAt))); // 최신순 정렬
+      const res = await axios.get<ServerImage[]>(`${serverUrl}/images`);
+      setImages(
+        res.data.sort((a, b) => b.uploadedAt.localeCompare(a.uploadedAt)),
+      ); // 최신순 정렬
     } catch (error) {
       console.error('서버 이미지 불러오기 실패:', error);
     }
-  };
+  }, [serverUrl]);
 
   useEffect(() => {
     fetchImages();
-  }, []);
+  }, [fetchImages]);
 
   const openViewer = (index: number) => {
     setSelectedIndex(index);
     setViewerVisible(true);
   };
 
-  const imagesForViewer = images.map((img) => ({
-    uri: `${BASE_URL}${img.url}`,
+  const imagesForViewer = images.map(img => ({
+    uri: `${serverUrl}${img.url}`,
   }));
 
   return (
     <View style={styles.container}>
-      <UploadImageButton onUploadSuccess={fetchImages} />
+      <UploadImageButton onUploadSuccess={fetchImages} serverUrl={serverUrl} />
 
       {images.length === 0 ? (
         <Text>서버에 이미지가 없습니다.</Text>
@@ -51,11 +62,11 @@ const ServerImagesScreen = () => {
         <FlatList
           data={images}
           numColumns={3}
-          keyExtractor={(item) => item.id}
+          keyExtractor={item => item.id}
           renderItem={({ item, index }) => (
             <TouchableOpacity onPress={() => openViewer(index)}>
               <Image
-                source={{ uri: `${BASE_URL}${item.url}` }}
+                source={{ uri: `${serverUrl}${item.url}` }}
                 style={styles.image}
               />
             </TouchableOpacity>

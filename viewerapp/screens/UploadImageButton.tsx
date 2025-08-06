@@ -1,16 +1,17 @@
 import React from 'react';
-import { Button, View, Alert } from 'react-native';
+import { TouchableOpacity, Text, View, StyleSheet, Alert } from 'react-native';
 import { launchImageLibrary } from 'react-native-image-picker';
 import axios from 'axios';
 
 type Props = {
   onUploadSuccess?: () => void;
+  serverUrl: string; // 추가
 };
 
-const SERVER_URL = 'http://192.168.0.103:3000/upload'; // 실제 IP와 포트로 교체
+// const SERVER_URL = 'http://192.168.0.103:3000/upload'; // 실제 IP와 포트로 교체
 
-const UploadImageButton = ({ onUploadSuccess }: Props) => {
-  const pickImageAndUpload = async () => {
+const UploadImageButton = ({ onUploadSuccess, serverUrl }: Props) => {
+  const handleImagePick = async () => {
     const result = await launchImageLibrary({
       mediaType: 'photo',
     });
@@ -19,17 +20,21 @@ const UploadImageButton = ({ onUploadSuccess }: Props) => {
       return;
     }
 
-    const photo = result.assets[0];
-    const formData = new FormData();
+    const image = result.assets[0];
+    if (!image.uri || !image.type || !image.fileName) {
+      console.warn('이미지 정보가 불완전합니다.');
+      return;
+    }
 
+    const formData = new FormData();
     formData.append('file', {
-      uri: photo.uri,
-      type: photo.type,
-      name: photo.fileName || 'photo.jpg',
+      uri: image.uri,
+      type: image.type,
+      name: image.fileName || 'photo.jpg',
     } as any);
 
     try {
-      const res = await axios.post(SERVER_URL, formData, {
+      const res = await axios.post(`${serverUrl}/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -47,9 +52,27 @@ const UploadImageButton = ({ onUploadSuccess }: Props) => {
 
   return (
     <View style={{ margin: 10 }}>
-      <Button title="이미지 업로드" onPress={pickImageAndUpload} />
+      <TouchableOpacity style={styles.button} onPress={handleImagePick}>
+        <Text style={styles.text}>이미지 업로드</Text>
+      </TouchableOpacity>
     </View>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    marginVertical: 10,
+  },
+  button: {
+    backgroundColor: '#007aff',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 8,
+  },
+  text: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+});
 
 export default UploadImageButton;
