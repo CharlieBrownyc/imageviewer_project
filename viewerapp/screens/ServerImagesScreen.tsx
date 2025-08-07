@@ -10,6 +10,8 @@ import {
 import axios from 'axios';
 import UploadImageButton from './UploadImageButton';
 import ImageViewing from 'react-native-image-viewing';
+import log from '../utils/logger';
+import { useFocusEffect } from '@react-navigation/native';
 
 // const BASE_URL = 'http://192.168.0.103:3000'; // 서버 주소
 // const LIST_URL = `${BASE_URL}/images`;
@@ -42,6 +44,12 @@ const ServerImagesScreen = ({ serverUrl }: Props) => {
   useEffect(() => {
     fetchImages();
   }, [fetchImages]);
+
+  useFocusEffect(
+    useCallback(() => {
+      log.info(`🌀 탭 진입 - serverUrl: ${serverUrl}`);
+    }, [serverUrl]),
+  );
 
   const openViewer = (index: number) => {
     setSelectedIndex(index);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import {
   View,
   Image,
@@ -15,6 +15,8 @@ import { CameraRoll } from '@react-native-camera-roll/camera-roll';
 import ImageViewing from 'react-native-image-viewing';
 import UploadImageButton from './UploadImageButton';
 import ImageEditorButton from './ImageEditorButton';
+import log from '../utils/logger';
+import { useFocusEffect } from '@react-navigation/native';
 
 const screenWidth = Dimensions.get('window').width;
 const imageMargin = 4;
@@ -57,6 +59,12 @@ const LocalImagesScreen = ({ serverUrl }: Props) => {
     return true;
   };
 
+  useFocusEffect(
+    useCallback(() => {
+      log.info(`🌀 탭 진입 - serverUrl: ${serverUrl}`);
+    }, [serverUrl]),
+  );
+
   useEffect(() => {
     const loadImages = async () => {
       const hasPermission = await requestPermission();
@@ -76,12 +84,12 @@ const LocalImagesScreen = ({ serverUrl }: Props) => {
         console.log('🖼️ 불러온 사진 개수:', result.edges.length);
 
         // 모든 이미지 URI와 파일명 로그 출력
-        result.edges.forEach((edge: any, index: number) => {
-          const uri = edge.node.image.uri;
-          const filename = edge.node.image.filename || '(파일명 없음)';
-          console.log(`📷 [${index}] URI: ${uri}`);
-          console.log(`📄 파일명: ${filename}`);
-        });
+        // result.edges.forEach((edge: any, index: number) => {
+        //   const uri = edge.node.image.uri;
+        //   const filename = edge.node.image.filename || '(파일명 없음)';
+        //   console.log(`📷 [${index}] URI: ${uri}`);
+        //   console.log(`📄 파일명: ${filename}`);
+        // });
         const uris = result.edges.map((edge: any) => edge.node.image.uri);
         setPhotos(uris);
       } catch (error) {

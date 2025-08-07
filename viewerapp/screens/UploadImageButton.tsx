@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { TouchableOpacity, Text, View, StyleSheet, Alert } from 'react-native';
 import { launchImageLibrary } from 'react-native-image-picker';
 import axios from 'axios';
+import log from '../utils/logger';
+import * as Progress from 'react-native-progress';
 
 type Props = {
   onUploadSuccess?: () => void;
@@ -11,6 +13,9 @@ type Props = {
 // const SERVER_URL = 'http://192.168.0.103:3000/upload'; // 실제 IP와 포트로 교체
 
 const UploadImageButton = ({ onUploadSuccess, serverUrl }: Props) => {
+  const [uploading, setUploading] = useState(false);
+  const [progress, setProgress] = useState(0); // 0 ~ 1
+
   const handleImagePick = async () => {
     const result = await launchImageLibrary({
       mediaType: 'photo',
@@ -34,9 +39,19 @@ const UploadImageButton = ({ onUploadSuccess, serverUrl }: Props) => {
     } as any);
 
     try {
+      setUploading(true);
+      setProgress(0);
+
       const res = await axios.post(`${serverUrl}/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
+        },
+        onUploadProgress: progressEvent => {
+          if (progressEvent.total) {
+            const percent = progressEvent.loaded / progressEvent.total;
+            setProgress(percent);
+            log.debug(`📤 업로드 진행률: ${(percent * 100).toFixed(2)}%`);
+          }
         },
       });
 
@@ -47,21 +62,49 @@ const UploadImageButton = ({ onUploadSuccess, serverUrl }: Props) => {
     } catch (error) {
       console.error('업로드 실패:', error);
       Alert.alert('업로드 실패', '서버로 전송하는 중 오류가 발생했습니다.');
+    } finally {
+      setUploading(false);
+      setProgress(0);
     }
   };
 
+  useEffect(() => {
+    log.info(`🔄 UploadImageButton mounted with serverUrl: ${serverUrl}`);
+    return () => {
+      log.info('🔄 UploadImageButton unmounted');
+    };
+  }, [serverUrl]);
+
   return (
-    <View style={{ margin: 10 }}>
-      <TouchableOpacity style={styles.button} onPress={handleImagePick}>
-        <Text style={styles.text}>이미지 업로드</Text>
+    <View style={styles.container}>
+      <TouchableOpacity
+        style={[styles.button, uploading && { backgroundColor: '#ccc' }]}
+        onPress={handleImagePick}
+        disabled={uploading}
+      >
+        <Text style={styles.text}>
+          {uploading ? '업로드 중...' : '이미지 업로드'}
+        </Text>
       </TouchableOpacity>
+      {uploading && (
+        <View style={styles.progressWrapper}>
+          <Text style={styles.progressText}>{Math.round(progress * 100)}%</Text>
+          <Progress.Bar
+            progress={progress}
+            width={200}
+            color="#007aff"
+            animated
+            useNativeDriver={true}
+          />
+        </View>
+      )}
     </View>
   );
 };
 const styles = StyleSheet.create({
   container: {
+    margin: 10,
     alignItems: 'center',
-    marginVertical: 10,
   },
   button: {
     backgroundColor: '#007aff',
@@ -72,6 +115,14 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontWeight: 'bold',
+  },
+  progressWrapper: {
+    marginTop: 10,
+    width: '80%',
+    alignItems: 'center',
+  },
+  progressText: {
+    marginBottom: 4,
   },
 });
 

@@ -7,7 +7,7 @@
 
 #### Step by step Project
 * RN command[🔗](./ReactNative.md)  
-
+[빌드명령어 package.json](https://adjh54.tistory.com/565
 > build & run
 
 1. Create New Project  
@@ -58,6 +58,7 @@ npx react-native run-android
 ```bash
 npm install --save-dev @types/react
 npm install --save-dev @types/react-native
+npm install --save react-native-logs
 npm install \
   @react-native-camera-roll/camera-roll \
   react-native-image-viewing \
@@ -67,8 +68,7 @@ npm install \
 npm install \
   @react-navigation/native \
   @react-navigation/bottom-tabs \
-  react-native-permissions \
-  react-native-worklets
+  react-native-permissions 
 npm install \
 	axios \
   react-native-screens \
@@ -76,14 +76,9 @@ npm install \
   react-native-gesture-handler \
 npm install react-native-svg \
   lucide-react-native
+npm install react-native-progress
 ```
-```
-npm install @react-native-camera-roll/camera-roll react-native-image-viewing react-native-image-picker react-native-image-crop-picker react-native-reanimated
 
-npm install @react-navigation/native @react-navigation/bottom-tabs react-native-permissions react-native-worklets
-
-npm install axios react-native-screens react-native-safe-area-context react-native-gesture-handler
-```
 
 > builc optimization<a id="opti"></a>
 
@@ -140,10 +135,33 @@ npm install axios react-native-screens react-native-safe-area-context react-nati
       }
     }
     ```
+  * `npm install`
   * cd project_root/ : `npx react-native codegen`
   * `react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/`
-  * cd android : `gradlew assembleRelease`
+  * npx react-native build-android --mode=release
+  
+> run, build script (package.json)  
 
+| 구성명령어(npm) | 구성 명령어(yarn) | 설명 |
+| --- | --- | --- |
+|npm run an	| yarn run an | 8081 포트에서 안드로이드 기기에 실행합니다 |
+|npm run ios | yarn run ios | 8081 포트에서 iOS 기기에 실행합니다. |
+|npm run clean | yarn run clean | 캐시를 제거하고 8081 포트로 재 실행합니다. |
+|npm run an:clean | yarn run an:clean |Gradle 빌드된 파일들의 캐시를 초기화합니다. |
+|npm run ios:clean | yarn run ios:clean | iOS 빌드된 파일들을 초기화합니다. |
+|npm run build:apk | yarn run build:apk | 안드로이드 기기를 빌드하여 .apk 확장자의 파일을 생성합니다. |
+|npm run build:aab | yarn run build:aab | 안드로이드 기기를 빌드하여 .aab 확장자의 파일을 생성합니다. |  
+```json
+"scripts": {
+	"an": "npx react-native run-android --port 8081 APP_ENV=local",
+	"ios": "react-native run-ios --port 8081 APP_ENV=local",
+	"clean": "npx react-native start --port 8081 --reset-cache",
+	"an:clean": "cd android 2>/dev/null && ./gradlew clean || (cd .. && cd android && ./gradlew clean)",
+	"ios:clean": "cd ios 2>/dev/null && pod cache clean --all || (cd .. && cd ios && pod cache clean --all)",
+	"build:apk": "cd android 2>/dev/null && ./gradlew assembleRelease || (cd .. && cd android && ./gradlew assembleRelease)",
+	"build:aab": "cd android 2>/dev/null && ./gradlew bundleRelease || (cd .. && cd android && ./gradlew bundleRelease)"		
+}
+```
 ### 🧭 전체 앱 기능 개요 (React Native + TypeScript)
 <table>
     <tr><td>기능 영역</td><td>상세 내용</td></tr>

@@ -9,9 +9,7 @@ import { Image, Cloud } from 'lucide-react-native';
 const Tab = createBottomTabNavigator();
 
 const App = () => {
-  const [serverUrl, setServerUrl] = useState(
-    'http://192.168.0.103:3000/upload',
-  ); // 여기에 주소 입력
+  const [serverUrl, setServerUrl] = useState('http://192.168.0.103:3000'); // 여기에 주소 입력
 
   useEffect(() => {
     // Initialize any necessary services or state here
