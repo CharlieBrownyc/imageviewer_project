@@ -9,6 +9,8 @@ import { ImageController } from './image.controller';
 import { ImageService } from './image.service';
 import { DBConnectionLoggerService } from './dblogger.service';
 import { LoggerMiddleware } from './logger.middleware';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -28,8 +30,8 @@ import { LoggerMiddleware } from './logger.middleware';
       serveRoot: '/uploads',
     }),
   ],
-  controllers: [ImageController],
-  providers: [ImageService, DBConnectionLoggerService],
+  controllers: [ImageController, AppController],
+  providers: [ImageService, DBConnectionLoggerService, AppService],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
